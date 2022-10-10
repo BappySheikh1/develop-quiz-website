@@ -11,7 +11,7 @@ function NavScrollExample() {
     <Navbar className='nav-container' expand="lg">
       <Container fluid>
         {/* <Navbar.Brand href="/" >Navbar scroll</Navbar.Brand> */}
-        <NavLink to='/' className='nav-brand'>Navbar scroll</NavLink>
+        <NavLink to='/home' className='navBrand fw-semibold text-danger'>LearnPLUS</NavLink>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
