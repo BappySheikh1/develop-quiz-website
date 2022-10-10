@@ -2,14 +2,16 @@ import React from 'react';
 import './Quiz.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faEye } from '@fortawesome/free-solid-svg-icons'
+import { toast } from 'react-toastify';
 
 
 const Quiz = ({cardQuiz}) => {
     // console.log(cardQuiz)
+    
     const {question,options,correctAnswer}=cardQuiz
 
     const handlerClilkCurrectAns=()=>{
-        console.log('currect ans')
+        toast.info(correctAnswer,{autoClose: 1000})
     }
     return (
         <div className='mt-5'>
