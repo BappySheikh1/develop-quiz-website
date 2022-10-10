@@ -5,13 +5,13 @@ import './ErrorPage.css'
 const ErrorPage = () => {
     const error =useRouteError()
     return (
-        <div className='height-100% d-flex flex-column justify-content-center align-items-center'>
-           <h1>Ops! An Error Ocurred!</h1>
+        <div className='ErrorPage d-flex flex-column justify-content-center align-items-center'>
+           <h1 className='text-dark fs-1'>Ops! An Error Ocurred!</h1>
            {
             error && (
                 <div>
-                    <p>{error?.statusText || error?.message}</p>
-                    <p>{error?.status}</p>
+                    <p className='text-danger fs-2'>{error?.statusText || error?.message}</p>
+                    <p className='text-danger fs-2'>{error?.status}</p>
                 </div>
             )
            }
