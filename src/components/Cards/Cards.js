@@ -5,7 +5,7 @@ import './Cards.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
-import CardDetails from '../CardDetails/CardDetails';
+
 
 
 const Cards = ({cards}) => {
@@ -26,7 +26,6 @@ const Cards = ({cards}) => {
               </Link>
              </Card.Body>
            </Card>
-           
          </div>
     );
 };
