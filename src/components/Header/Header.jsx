@@ -8,9 +8,10 @@ import { Link, NavLink } from 'react-router-dom';
 
 function NavScrollExample() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar className='nav-container' expand="lg">
       <Container fluid>
-        <Navbar.Brand href="/" >Navbar scroll</Navbar.Brand>
+        {/* <Navbar.Brand href="/" >Navbar scroll</Navbar.Brand> */}
+        <NavLink to='/' className='nav-brand'>Navbar scroll</NavLink>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -18,10 +19,10 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <NavLink to="/home">Home</NavLink>
-            <NavLink to="/topics">Topics</NavLink>
-            <NavLink to="/statistics">Statistics</NavLink>
-            <NavLink to="/blog">Blog</NavLink>
+            <NavLink className={({isActive})=> isActive ? 'actived' : undefined} to="/home">Home</NavLink>
+            <NavLink className={({isActive})=> isActive ? 'actived' : undefined} to="/topics">Topics</NavLink>
+            <NavLink className={({isActive})=> isActive ? 'actived' : undefined} to="/statistics">Statistics</NavLink>
+            <NavLink className={({isActive})=> isActive ? 'actived' : undefined} to="/blog">Blog</NavLink>
            
             
 
