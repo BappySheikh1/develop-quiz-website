@@ -54,7 +54,7 @@ const Statistics = () => {
         <div className='my-5'>
           <div>
             
-            <LineChart width={450} height={300} data={data}>
+            <LineChart width={500} height={300} data={data}>
             <Line type="monotone" dataKey="total" stroke="#8884d8"/>
             <XAxis dataKey="name" />
             <YAxis />
