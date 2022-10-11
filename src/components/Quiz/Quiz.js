@@ -3,27 +3,24 @@ import './Quiz.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faEye } from '@fortawesome/free-solid-svg-icons'
 import { toast } from 'react-toastify';
+import ToastComponent from '../ToastComponent/ToastComponent';
 
 
 const Quiz = ({cardQuiz}) => {
     const {question,options,correctAnswer}=cardQuiz
-
+//   console.log(cardQuiz)
     const handlerClilkCurrectAns=()=>{
         toast.info(correctAnswer,{autoClose: 1000})
     }
 
-
-
-    const check=(option)=>{
-       if(option === correctAnswer){
-        return toast.success(correctAnswer,{autoClose: 1000})
-       }
-       else{
-
-           return toast.error('this not a currect ans',{autoClose: 1000})
-       }
-       
-    }
+    const handlerCheckAnswer=(option)=>{
+        if(option === correctAnswer){
+         return toast.success(correctAnswer ,{autoClose: 1000})
+        }
+        else{
+            return toast.error(correctAnswer ,{autoClose: 1000})
+        }
+        }
 
     return (
         <div className='mt-5 '>
@@ -34,36 +31,11 @@ const Quiz = ({cardQuiz}) => {
                     <FontAwesomeIcon onClick={handlerClilkCurrectAns} className='currectIcon' icon={faEye}/>
                 </div>
                 </div>
+    
                <div id='quiz-box' className='form-check '>
-
-                 <div onClick={(option)=>check(option.target.innerText)} className='border border-primary p-2 rounded boxHover'> 
-                 <label className='form-check-label' htmlFor="flexRadioDefault1">
-                 <input type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                 {options[0]}
-                 </label>
-                 </div>
-
-                 <div onClick={(option)=>check(option)}  className='border border-primary p-2 rounded boxHover'> 
-                 <label className='form-check-label' htmlFor="flexRadioDefault2">
-                 <input type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
-                 {options[1]}
-                 </label>
-                 </div>
-
-                <div onClick={(option)=>check(option)}  className='border border-primary p-2 rounded  boxHover'>  
-                 <label className='form-check-label' htmlFor="flexRadioDefault3">
-                 <input type="radio" name="flexRadioDefault" id="flexRadioDefault3" />
-                 {options[2]}
-                 </label>
-                </div>
-
-                 <div onClick={(option)=>check(option)}  className='border border-primary p-2 rounded  boxHover'>  
-                 <label className='form-check-label' htmlFor="flexRadioDefault4">
-                 <input type="radio" name="flexRadioDefault" id="flexRadioDefault4" />
-                 {options[3]}
-                 </label>
-
-                 </div>
+                   {
+                    options.map((option,idx) => <ToastComponent key={idx} option={option} handlerCheckAnswer={handlerCheckAnswer} /> )
+                   }
                </div>
           </div>
         </div>

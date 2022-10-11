@@ -16,17 +16,12 @@ export const router =createBrowserRouter([
      children:[
         {
           path:'/',
-         
-          element: <Home />
-        },
-        {
-          path:'/home',
           loader: ()=> fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Home />
         },
         {
           path:'/topics',
-          element: <Topics />
+          element: <Home/>
         },
         {
           path:'/blog',

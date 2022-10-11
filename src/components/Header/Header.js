@@ -11,7 +11,7 @@ function NavScrollExample() {
     <Navbar className='nav-container' expand="lg">
       <Container fluid>
         {/* <Navbar.Brand href="/" >Navbar scroll</Navbar.Brand> */}
-        <NavLink to='/home' className='navBrand fw-semibold text-danger'>LearnPLUS</NavLink>
+        <NavLink to='/' className='navBrand fw-semibold text-danger'>LearnPLUS</NavLink>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -19,7 +19,7 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <NavLink className={({isActive})=> isActive ? 'actived' : undefined} to="/home">Home</NavLink>
+            
             <NavLink className={({isActive})=> isActive ? 'actived' : undefined} to="/topics">Topics</NavLink>
             <NavLink className={({isActive})=> isActive ? 'actived' : undefined} to="/statistics">Statistics</NavLink>
             <NavLink className={({isActive})=> isActive ? 'actived' : undefined} to="/blog">Blog</NavLink>
