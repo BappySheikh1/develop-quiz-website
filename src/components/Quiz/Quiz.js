@@ -8,6 +8,7 @@ import ToastComponent from '../ToastComponent/ToastComponent';
 
 const Quiz = ({cardQuiz,idx}) => {
     const questionCount=idx + 1 ;
+    
     const {question,options,correctAnswer}=cardQuiz
     const handlerClilkCurrectAns=()=>{
         toast.info(correctAnswer,{autoClose: 1000})
