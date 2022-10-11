@@ -5,8 +5,7 @@ import './Statistics.css'
 
 const Statistics = () => {
  const data=useContext(QuizDataContext)
-//  console.log(data[0])
-  // const data = [
+
   //   {
   //     name: 'Page A',
   //     marks: 4000,
