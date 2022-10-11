@@ -1,6 +1,5 @@
 
 import React, { useContext } from 'react';
-import { useLoaderData } from 'react-router-dom';
 import Cards from '../Cards/Cards';
 import './Home.css';
 import Banner from '../Banner/Banner';
@@ -16,6 +15,9 @@ const Home = () => {
         <div>
             <div>
               <Banner></Banner>
+            </div>
+            <div className='text-center my-5'>
+                <h1 className='fw-bold'>Quiz! <span className='text-danger'>LearnPLUS</span> Everyday.</h1>
             </div>
             <div className='home-container'>
             {

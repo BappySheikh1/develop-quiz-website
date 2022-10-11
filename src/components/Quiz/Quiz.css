@@ -1,10 +1,11 @@
 #quiz-container{
-    background-color: lightblue;
+    background-color: rgb(17, 25, 27);
     border-radius: 10px;
+    color: rgb(219, 199, 199);
 }
 #quiz-box{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns:1fr;
     grid-gap: 10px;
     width: 50%;
     margin: 30px auto;

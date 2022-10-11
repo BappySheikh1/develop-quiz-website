@@ -26,7 +26,7 @@ const Quiz = ({cardQuiz}) => {
         <div className='mt-5 '>
             <div id='quiz-container' className='w-75 m-auto py-5 border  my-4 shadow-lg'>
                 <div className='d-flex justify-content-between'>
-                <h5 className='m-auto'>{question}</h5>
+                <h5 className='m-auto'><span>Quiz-{1}</span>{question}</h5>
                 <div className='p-2'>
                     <FontAwesomeIcon onClick={handlerClilkCurrectAns} className='currectIcon' icon={faEye}/>
                 </div>
