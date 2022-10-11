@@ -12,8 +12,8 @@ function NavScrollExample() {
       <Container fluid>
         {/* <Navbar.Brand href="/" >Navbar scroll</Navbar.Brand> */}
         <NavLink to='/' className='navBrand fw-semibold text-danger'>LearnPLUS</NavLink>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
+        <Navbar.Toggle className='bg-light' aria-controls="navbarScroll" />
+        <Navbar.Collapse  id="navbarScroll">
           <Nav
             className="ms-auto my-2 my-lg-0 px-5 py-2 toggleNav"
             style={{ maxHeight: '100px' }}
