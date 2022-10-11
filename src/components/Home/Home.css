@@ -1,3 +1,18 @@
+#headerContainer {
+  display: flex;
+  padding: 10px;
+  background-color: rgb(87, 28, 28);
+}
+#headerContainer img{
+  width: 200px;
+  border-radius: 10px;
+}
+.header-item{
+ padding-left: 10px;
+ color: aliceblue;
+ 
+}
+
 .home-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -7,7 +22,6 @@
     padding-right: 150px;
  
 }
-
 @media screen and (max-width:650px) {
     .home-container{
         display: grid;
@@ -15,6 +29,14 @@
         padding-left: 40px ;
         padding-right: 40px ;
     }    
+    #headerContainer img{
+      height: 100px;
+    }
+    .header-item{
+      padding-left: 10px;
+      color: aliceblue;
+      line-height: 15px;
+     }
 }
 @media screen and (min-width:651px) and (max-width: 1050px) {
   .home-container{
