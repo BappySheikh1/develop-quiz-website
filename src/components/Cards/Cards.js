@@ -19,7 +19,7 @@ const Cards = ({cards}) => {
                <Card.Text>
                   Quiz: {total} 
               </Card.Text>
-              <Link to={`/home/${id}`}>
+              <Link to={`/quiz/${id}`}>
               <Button variant="danger" className='fw-semibold text-light'>
                Quiz Practice  <FontAwesomeIcon icon={faArrowRight}/>
               </Button>

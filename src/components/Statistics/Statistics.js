@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { QuizDataContext } from '../../Main/Main';
+import './Statistics.css'
 
 const Statistics = () => {
  const data=useContext(QuizDataContext)
@@ -51,9 +52,8 @@ const Statistics = () => {
   // ];  
 
     return (
-        <div className='my-5'>
+        <div className='my-5 m-auto'>
           <div>
-            
             <LineChart width={500} height={300} data={data}>
             <Line type="monotone" dataKey="total" stroke="#8884d8"/>
             <XAxis dataKey="name" />

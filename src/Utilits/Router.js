@@ -17,7 +17,6 @@ export const router =createBrowserRouter([
      children:[
         {
           path:'/',
-          // loader: ()=> fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Home />
         },
         {
@@ -33,7 +32,7 @@ export const router =createBrowserRouter([
           element: <Statistics />
         },
         {
-           path:'/home/:id',
+           path:'/quiz/:id',
            loader: ({params})=> fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`),
            element: <CardDetails />
         }

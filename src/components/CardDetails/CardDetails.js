@@ -11,7 +11,7 @@ const CardDetails = () => {
         <div className='mt-5'>
              <h3 className='text-center fw-bold'>Quiz Of {cardDetailsData.data.name}</h3>
             {
-                cardDetails.map(cardQuiz => <Quiz key={cardQuiz.id} cardQuiz={cardQuiz}/> ) 
+                cardDetails.map((cardQuiz,idx) => <Quiz key={cardQuiz.id} idx={idx} cardQuiz={cardQuiz}/> ) 
 
             }
             
