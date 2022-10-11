@@ -4,17 +4,18 @@ import Cards from '../Cards/Cards';
 import './Home.css'
 
 const Home = () => {
-    const {data}=useLoaderData();
+    const data=useLoaderData();
     return (
         <div>
             <div>
               <header className=''>
                 <h2>Welcome To You LearnPLUS Quiz</h2>
+                <h5></h5>
               </header>
             </div>
             <div className='home-container'>
             {
-                data?.map(cards => <Cards key={cards.id} cards={cards}/>)
+                data?.data.map(cards => <Cards key={cards.id} cards={cards}/>)
             }
             </div>
     

@@ -3,13 +3,13 @@ import { useLoaderData } from 'react-router-dom';
 import Quiz from '../Quiz/Quiz';
 
 
-const CardDetails = ({name}) => {
+const CardDetails = () => {
     const cardDetailsData=useLoaderData();
     const cardDetails=cardDetailsData.data.questions
-    // console.log(cardDetails);
+    // console.log(cardDetailsData);
     return (
         <div className='mt-5'>
-             <h3 className='text-center fw-bold'>Quiz Of {name}</h3>
+             <h3 className='text-center fw-bold'>Quiz Of {cardDetailsData.data.name}</h3>
             {
                 cardDetails.map(cardQuiz => <Quiz key={cardQuiz.id} cardQuiz={cardQuiz}/> ) 
 

@@ -8,7 +8,7 @@ import ToastComponent from '../ToastComponent/ToastComponent';
 
 const Quiz = ({cardQuiz}) => {
     const {question,options,correctAnswer}=cardQuiz
-//   console.log(cardQuiz)
+ 
     const handlerClilkCurrectAns=()=>{
         toast.info(correctAnswer,{autoClose: 1000})
     }
@@ -26,7 +26,7 @@ const Quiz = ({cardQuiz}) => {
         <div className='mt-5 '>
             <div id='quiz-container' className='w-75 m-auto py-5 border  my-4 shadow-lg'>
                 <div className='d-flex justify-content-between'>
-                <h5 className='m-auto'>Quiz:-{question}</h5>
+                <h5 className='m-auto'>{question}</h5>
                 <div className='p-2'>
                     <FontAwesomeIcon onClick={handlerClilkCurrectAns} className='currectIcon' icon={faEye}/>
                 </div>
