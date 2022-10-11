@@ -12,15 +12,15 @@ const Cards = ({cards}) => {
     const {name,logo,total,id}=cards
     return (
          <div>
-          <Card className='cards-container'>
+          <Card className='cards-container bg-dark'>
             <Card.Img variant="top" src={logo} />
-             <Card.Body className='card-body'>
+             <Card.Body className='card-body '>
              <Card.Title>{name}</Card.Title>
                <Card.Text>
                   Quiz: {total} 
               </Card.Text>
               <Link to={`/home/${id}`}>
-              <Button variant="primary">
+              <Button variant="danger" className='fw-semibold text-light'>
                Quiz Practice  <FontAwesomeIcon icon={faArrowRight}/>
               </Button>
               </Link>

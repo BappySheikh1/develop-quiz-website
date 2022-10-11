@@ -1,6 +1,8 @@
+
 .card-body{
-    border: 1px solid gray;
+    border-top:1px solid lightgray ;
     display: flex;
     align-items: center;
     justify-content:space-between;
+    background-color: white;
 }

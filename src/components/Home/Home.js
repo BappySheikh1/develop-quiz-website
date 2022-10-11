@@ -4,15 +4,20 @@ import Cards from '../Cards/Cards';
 import './Home.css'
 
 const Home = () => {
-    const quizCardsData=useLoaderData()
-    // console.log(quizCardsData)
-    const quizCards=quizCardsData.data
-    // console.log(quizCards)
+    const {data}=useLoaderData();
     return (
-        <div className='home-container'>
+        <div>
+            <div>
+              <header className=''>
+                <h2>Welcome To You LearnPLUS Quiz</h2>
+              </header>
+            </div>
+            <div className='home-container'>
             {
-                quizCards.map(cards => <Cards key={cards.id} cards={cards}/>)
+                data?.map(cards => <Cards key={cards.id} cards={cards}/>)
             }
+            </div>
+    
         </div>
     );
 };
