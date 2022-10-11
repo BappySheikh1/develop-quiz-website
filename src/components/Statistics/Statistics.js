@@ -53,12 +53,14 @@ const Statistics = () => {
     return (
         <div className='my-5'>
           <div>
-          <LineChart width={450} height={300} data={data}>
-            <Line type="monotone" dataKey="total" stroke="#82ca9d" />
+            
+            <LineChart width={450} height={300} data={data}>
+            <Line type="monotone" dataKey="total" stroke="#8884d8"/>
             <XAxis dataKey="name" />
             <YAxis />
             <Tooltip />
           </LineChart>
+          
           </div>
         </div>
     );
