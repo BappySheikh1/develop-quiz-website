@@ -8,11 +8,17 @@
     grid-gap: 10px;
     width: 50%;
     margin: 30px auto;
+    font-weight: 600;
+    text-transform: capitalize;
     
 }
+
 .boxHover:hover{
-    background-color: rgb(200, 226, 226);
+    background-color: rgb(32, 143, 143);
+    font-weight: 600;
+    color: white;
 }
+ 
 .currectIcon{
     cursor: pointer;
 }

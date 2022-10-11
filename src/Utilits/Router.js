@@ -2,7 +2,6 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../Main/Main";
 import Home from '../components/Home/Home'
 import ErrorPage from "../components/ErrorPage/ErrorPage";
-import Topics from "../components/Topics/Topics";
 import Blog from "../components/Blog/Blog"
 import Statistics from "../components/Statistics/Statistics";
 import CardDetails from "../components/CardDetails/CardDetails";

@@ -18,7 +18,7 @@ const Quiz = ({cardQuiz}) => {
          return toast.success(correctAnswer ,{autoClose: 1000})
         }
         else{
-            return toast.error(correctAnswer ,{autoClose: 1000})
+            return toast.error("Not Currect Answer" ,{autoClose: 1000})
         }
         }
 
@@ -32,7 +32,7 @@ const Quiz = ({cardQuiz}) => {
                 </div>
                 </div>
     
-               <div id='quiz-box' className='form-check '>
+               <div id='quiz-box'>
                    {
                     options.map((option,idx) => <ToastComponent key={idx} option={option} handlerCheckAnswer={handlerCheckAnswer} /> )
                    }
