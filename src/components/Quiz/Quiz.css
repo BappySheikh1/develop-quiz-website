@@ -1,10 +1,18 @@
-.quiz-box{
+#quiz-container{
+    background-color: lightblue;
+    border-radius: 10px;
+}
+#quiz-box{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
     width: 50%;
     margin: 30px auto;
+    
 }
-
+.boxHover:hover{
+    background-color: rgb(200, 226, 226);
+}
 .currectIcon{
     cursor: pointer;
 }
